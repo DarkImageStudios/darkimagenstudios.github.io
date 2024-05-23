@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial_4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="contenedor">
+        <h3>Escribir un Programa que calcule 4 áreas: 1-cuadrado, 2-rectángulo, 3-triángulo y 4-círculo. El programa deberá solicitar para cada caso el ingreso de los datos necesarios para la definición de cada área, en caso se ingrese una opción diferente envié el mensaje de que la operación no está permitida. (considere el valor de la función de Math.PI para el cálculo del área del circulo Math.PI=3.141592653589793).
+            
+        </h3>
+        <hr>
+        <div id="resultado">
+            <script>
+                // Fase de lectura/escritura
+                var opcion, area,lado, base, altura, B_Triangulo, A_Triangulo, radio;
+        
+                // Fase de procesamiento
+                opcion = parseInt(prompt("Ingrese el número correspondiente a la figura cuyo área desea calcular:\n1 - Cuadrado\n2 - Rectángulo\n3 - Triángulo\n4 - Círculo"));
+       
+
+                if (opcion==1) {
+                    lado=parseFloat(prompt("Ingrese la longitud del lado del cuadrado:"));
+                    area=lado*lado;
+                } else if (opcion==2) {
+                    base=parseFloat(prompt("Ingrese la base del rectángulo:"));
+                    altura=parseFloat(prompt("Ingrese la altura del rectángulo:"));
+                    area=base*altura;
+                } else if (opcion==3) {
+                    B_Triangulo=parseFloat(prompt("Ingrese la base del triángulo:"));
+                    A_Triangulo=parseFloat(prompt("Ingrese la altura del triángulo:"));
+                    area=(B_Triangulo*A_Triangulo)/2;
+                } else if (opcion==4) {
+                    radio=parseFloat(prompt("Ingrese el radio del círculo:"));
+                    area=Math.PI*Math.pow(radio, 2);
+                } else {
+                    area="Operación no permitida";
+                }
+        
+                // Fase de salida
+                document.write("Área: "+area);
+            </script>
+        </div>
+     </div>   
+</body>
+</html>
+
+
+        
+
+      

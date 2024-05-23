@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial_3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="contenedor">
+        <h3>3.	Diseñar un programa que permita ingresar la edad de una cierta persona, y muestre:
+            <br>•	el mensaje de NIÑO si la edad es hasta 10; 
+            <br>•	el mensaje “PUBER” si la edad es mayor que 10 y menor o igual 15; 
+            <br>•	el mensaje “ADOLESCENTE” si la edad es mayor que 15 y menor o igual 19; 
+            <br>•	el mensaje “JOVEN” si la edad es mayor que 19 y menor o igual 26; 
+            <br>•	el mensaje “ADULTO” si la edad es mayor que 26 y menor o igual 65; 
+            <br>•	y el mensaje “ANCIANO” si la edad es mayor que 65.
+            
+        </h3>
+        <hr>
+        <div id="resultado">
+            <script>
+                // Fase de lectura/escritura
+                var edad, mensaje;
+        
+                // Fase de procesamiento
+                edad = parseInt(prompt("Ingrese la edad de la persona:"));
+        
+                if (edad<=10) {
+                    mensaje="NIÑO";
+                } else if (edad<=15) {
+                    mensaje="PUBER";
+                } else if (edad<=19) {
+                    mensaje="ADOLESCENTE";
+                } else if (edad<=26) {
+                    mensaje="JOVEN";
+                } else if (edad<=65) {
+                    mensaje="ADULTO";
+                } else {
+                    mensaje="ANCIANO";
+                }
+        
+                // Fase de salida
+                document.write("Mensaje: "+mensaje);
+            </script>
+            
+        </div>
+     </div>   
+</body>
+</html>
+
+
+        
+
+      
